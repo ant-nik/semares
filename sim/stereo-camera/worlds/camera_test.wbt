@@ -1,0 +1,162 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/BrushedAluminium.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Parquetry.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.437894725704521 -0.22657772038913723 0.8700061757386693 3.9532191872661855
+  position 0.3940228745236189 0.4676936515554737 0.93064023393651
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorAppearance Parquetry {
+    type "dark strip"
+  }
+}
+Solid {
+  translation 0.2 0 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Capsule {
+        height 0.001
+        radius 0.05
+        subdivision 20
+      }
+    }
+  ]
+  name "solid(2)"
+}
+SpotLight {
+  attenuation 0 0 1
+  beamWidth 0.785398
+  intensity 2
+  location -0.1 0 1
+  castShadows TRUE
+}
+Robot {
+  translation -0.05 -0.02 0.1
+  rotation 0.20935099811138072 0.9769713245197806 -0.04122124034807762 1.2218493686738734e-16
+  children [
+    Solid {
+      translation 0 0.05 0
+      rotation 0 1 0 0
+      children [
+        Camera {
+          translation 0 0.05 0
+          name "right camera"
+          fieldOfView 1
+          width 640
+          height 480
+          far 10
+          motionBlur 200
+        }
+        Solid {
+          translation -0.05 0 0
+          rotation 0 1 0 -1.57
+          children [
+            Solid {
+              translation 0 0 0.05
+              children [
+                Shape {
+                  appearance PBRAppearance {
+                    baseColor 0.498039 0.498039 0.498039
+                  }
+                  geometry Box {
+                    size 0.05 0.05 0.1
+                  }
+                }
+              ]
+            }
+            Shape {
+              appearance BrushedAluminium {
+              }
+              geometry Cone {
+                bottomRadius 0.025
+                height 0.1
+              }
+            }
+          ]
+        }
+      ]
+      name "right solid"
+    }
+    Solid {
+      translation 0 -0.05 0
+      children [
+        Solid {
+          translation -0.05 0 0
+          rotation 0 1 0 -1.57
+          children [
+            Solid {
+              translation 0 0 0.05
+              children [
+                Shape {
+                  appearance PBRAppearance {
+                    baseColor 0.498039 0.498039 0.498039
+                  }
+                  geometry Box {
+                    size 0.05 0.05 0.1
+                  }
+                }
+              ]
+            }
+            Shape {
+              appearance BrushedAluminium {
+              }
+              geometry Cone {
+                bottomRadius 0.025
+                height 0.1
+              }
+            }
+          ]
+        }
+        Camera {
+          name "left camera"
+          fieldOfView 1
+          width 640
+          height 480
+          far 10
+          motionBlur 200
+        }
+      ]
+      name "left solid"
+    }
+  ]
+  name "solid"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+  }
+  controller "python_code"
+}
+Solid {
+  translation 0.25 0 0.1
+  rotation 0 0.8944271909999159 0.4472135954999579 -1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "../textures/chess.png"
+          ]
+        }
+        metalness 0.5
+      }
+      geometry Box {
+        size 0.1 0.1 0.001
+      }
+    }
+  ]
+  name "solid(1)"
+}
