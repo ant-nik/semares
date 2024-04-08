@@ -7,5 +7,5 @@ centralWidgetVisible: 1
 orthographicViewHeight: 1
 textFiles: 0 "controllers/python_code/python_code.py"
 consoles: Console:All:All
-renderingDevicePerspectives: solid:left camera;1;0.416667;0.354673;0
+renderingDevicePerspectives: solid:left camera;1;0.416667;0.387438;0
 renderingDevicePerspectives: solid:right camera;1;0.417188;0.00361991;0

@@ -44,7 +44,7 @@ SpotLight {
   castShadows TRUE
 }
 Robot {
-  translation -0.05 -0.02 0.1
+  translation -0.05 -0.02 0.0496074
   rotation 0.20935099811138072 0.9769713245197806 -0.04122124034807762 1.2218493686738734e-16
   children [
     Solid {

@@ -1,4 +1,4 @@
-image_pattern,x,y,z,rx,ry,rz,rot,size_x,size_y,corner_x,corner_y
+image,x,y,z,rx,ry,rz,rot,size_x,size_y,corners_x,corners_y
 image1_r.jpg,0.25,0.0,0.1,0.0,0.894427,0.447214,1.0,0.1,0.1,7,7
 image1_l.jpg,0.25,0.0,0.1,0.0,0.894427,0.447214,1.0,0.1,0.1,7,7
 image9_r.jpg,0.4,0.0,0.1,0.0,0.894427,0.447214,1.0,0.1,0.1,7,7
