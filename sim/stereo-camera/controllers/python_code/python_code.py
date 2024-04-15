@@ -6,7 +6,7 @@ import cv2
 
 robot = Robot()
 
-timestep = 1000 # int(robot.getBasicTimeStep())
+timestep = int(robot.getBasicTimeStep())
 
 rcamera = robot.getDevice("right camera")
 lcamera = robot.getDevice("left camera")

@@ -5,20 +5,27 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/project
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/BrushedAluminium.proto"
 EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Parquetry.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/humans/pedestrian/protos/Pedestrian.proto"
 
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.437894725704521 -0.22657772038913723 0.8700061757386693 3.9532191872661855
-  position 0.3940228745236189 0.4676936515554737 0.93064023393651
+  orientation -0.12386120088212732 0.9826872533718212 0.13778303588099444 0.13230237885917367
+  position -3.1813027469768103 -0.054951717149892505 0.4691969740420713
 }
 TexturedBackground {
 }
 TexturedBackgroundLight {
 }
 RectangleArena {
+  floorSize 20 20
+  floorTileSize 2 2
   floorAppearance Parquetry {
-    type "dark strip"
+    type "light strip"
+  }
+  wallHeight 2
+  wallAppearance BrushedAluminium {
+    IBLStrength 0.5
   }
 }
 Solid {
@@ -44,21 +51,19 @@ SpotLight {
   castShadows TRUE
 }
 Robot {
-  translation -0.05 -0.02 0.0496074
-  rotation 0.20935099811138072 0.9769713245197806 -0.04122124034807762 1.2218493686738734e-16
+  translation -0.05 2.38227e-06 0.0496
   children [
     Solid {
       translation 0 0.05 0
       rotation 0 1 0 0
       children [
         Camera {
-          translation 0 0.05 0
-          name "right camera"
+          name "left camera"
           fieldOfView 1
           width 640
           height 480
+          projection "cylindrical"
           far 10
-          motionBlur 200
         }
         Solid {
           translation -0.05 0 0
@@ -88,7 +93,7 @@ Robot {
           ]
         }
       ]
-      name "right solid"
+      name "left solid"
     }
     Solid {
       translation 0 -0.05 0
@@ -121,18 +126,18 @@ Robot {
           ]
         }
         Camera {
-          name "left camera"
+          name "right camera"
           fieldOfView 1
           width 640
           height 480
+          projection "cylindrical"
           far 10
-          motionBlur 200
         }
       ]
-      name "left solid"
+      name "right solid"
     }
   ]
-  name "solid"
+  name "stereo camera"
   boundingObject Box {
     size 0.1 0.1 0.1
   }
@@ -158,5 +163,31 @@ Solid {
       }
     }
   ]
-  name "solid(1)"
+  name "chessdesk"
+}
+Solid {
+  translation 0.37 -0.07 0.11
+  rotation 1 0 0 0.785398
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "../textures/texture1.jpg"
+          ]
+        }
+        roughness 1
+        metalness 0
+      }
+      geometry Capsule {
+        height 0.1
+        radius 0.05
+      }
+    }
+  ]
+  name "solid(3)"
+}
+Pedestrian {
+  translation 4.5 0.1 1.27
+  rotation 0 0 1 -2.3
 }
