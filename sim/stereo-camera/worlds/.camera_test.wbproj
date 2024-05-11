@@ -9,5 +9,5 @@ textFiles: 0 "controllers/python_code/python_code.py"
 consoles: Console:All:All
 renderingDevicePerspectives: solid:left camera;1;0.417188;0.00361991;0
 renderingDevicePerspectives: solid:right camera;1;0.415625;0.263705;0.00152672
-renderingDevicePerspectives: stereo camera:left camera;1;0.417188;0.00361991;0
+renderingDevicePerspectives: stereo camera:left camera;1;0.41875;0.00361991;0
 renderingDevicePerspectives: stereo camera:right camera;1;0.415625;0.63163;0

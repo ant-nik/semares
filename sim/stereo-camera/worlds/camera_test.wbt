@@ -10,8 +10,8 @@ EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/project
 WorldInfo {
 }
 Viewpoint {
-  orientation -0.12386120088212732 0.9826872533718212 0.13778303588099444 0.13230237885917367
-  position -3.1813027469768103 -0.054951717149892505 0.4691969740420713
+  orientation 0.1910642990203315 0.403444502458247 -0.8948334856698688 1.0477261284552897
+  position -0.40683579081331855 -2.6561063702158867 1.5864707772614313
 }
 TexturedBackground {
 }
@@ -51,7 +51,8 @@ SpotLight {
   castShadows TRUE
 }
 Robot {
-  translation -0.05 2.38227e-06 0.0496
+  translation -0.05 -5.0498994495353795 0.049605530488270044
+  rotation 1 9.002160892914143e-11 -1.378945301242876e-10 4.3568628265343697e-07
   children [
     Solid {
       translation 0 0.05 0
@@ -144,6 +145,66 @@ Robot {
   physics Physics {
   }
   controller "python_code"
+  linearVelocity 5.91882460905328e-17 1.6921016252044285e-07 1.620772717453809e-05
+  angularVelocity -3.384137534815197e-06 1.2141980129665172e-15 4.523938914418581e-16
+}
+Solid {
+  translation 1 -5 0
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "../textures/texture4.jpg"
+          ]
+        }
+        metalness 0.1
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+}
+Solid {
+  translation 0.49 -5.02 0.15
+  rotation 0 0.7071067811865475 0.7071067811865475 1.1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "../textures/texture6.jpg"
+          ]
+        }
+        metalness 0.1
+      }
+      geometry Cylinder {
+        height 0.1
+        radius 0.05
+      }
+    }
+  ]
+  name "solid(4)"
+}
+Solid {
+  translation 0.74 -5.13 0.25
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColorMap ImageTexture {
+          url [
+            "../textures/texture5.jpg"
+          ]
+        }
+        metalness 0.1
+      }
+      geometry Box {
+        size 0.1 0.1 0.1
+      }
+    }
+  ]
+  name "solid(1)"
 }
 Solid {
   translation 0.25 0 0.1
