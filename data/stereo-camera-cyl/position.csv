@@ -15,6 +15,6 @@ no,type,image,cam_x,cam_y,cam_z,x,y,z,rx,ry,rz,rot,size_x,size_y,corners_x,corne
 89,l,image89_l.jpg, -0.28, 0.0, 0.184, 0.25, 0.0,0.1,0.0,0.894427,0.447214,-1.0,0.1,0.1,6,6
 91,r,image91_r.jpg, -0.28, -0.11, 0.164, 0.25, 0.0,0.1,0.0,0.894427,0.447214,-1.0,0.1,0.1,6,6
 91,l,image91_l.jpg, -0.28, -0.11, 0.164, 0.25, 0.0,0.1,0.0,0.894427,0.447214,-1.0,0.1,0.1,6,6
-36,r,image36_r.jpg, , , , , , , , , , , , , , 
-36,l,image36_l.jpg, , , , , , , , , , , , , ,
+36,r,image36_r.jpg,null,null,null,null,null,null,null,null,null,null,null,null,null,null
+36,l,image36_l.jpg,null,null,null,null,null,null,null,null,null,null,null,null,null,null
 
