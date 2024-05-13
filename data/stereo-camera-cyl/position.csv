@@ -15,6 +15,14 @@ no,type,image,cam_x,cam_y,cam_z,x,y,z,rx,ry,rz,rot,size_x,size_y,corners_x,corne
 89,l,image89_l.jpg, -0.28, 0.0, 0.184, 0.25, 0.0,0.1,0.0,0.894427,0.447214,-1.0,0.1,0.1,6,6
 91,r,image91_r.jpg, -0.28, -0.11, 0.164, 0.25, 0.0,0.1,0.0,0.894427,0.447214,-1.0,0.1,0.1,6,6
 91,l,image91_l.jpg, -0.28, -0.11, 0.164, 0.25, 0.0,0.1,0.0,0.894427,0.447214,-1.0,0.1,0.1,6,6
-36,r,image36_r.jpg,null,null,null,null,null,null,null,null,null,null,null,null,null,null
-36,l,image36_l.jpg,null,null,null,null,null,null,null,null,null,null,null,null,null,null
+36,r,image36_r.jpg,-0.05,-5.05,0.0496,null,null,null,null,null,null,null,null,null,null,null
+36,l,image36_l.jpg,-0.05,-5.05,0.0496,null,null,null,null,null,null,null,null,null,null,null
+12,r,image12_r.jpg,0.102,-5.04,0.0931,null,null,null,null,null,null,null,null,null,null,null
+12,l,image12_l.jpg,0.102,-5.04,0.0931,null,null,null,null,null,null,null,null,null,null,null
+14,r,image14_r.jpg,-0.099,-5.05,0.0868,null,null,null,null,null,null,null,null,null,null,null
+14,l,image14_l.jpg,-0.099,-5.05,0.0868,null,null,null,null,null,null,null,null,null,null,null
+16,r,image16_r.jpg,-0.0949368,-5.0,0.126572,null,null,null,null,null,null,null,null,null,null,null
+16,l,image16_l.jpg,-0.0949368,-5.0,0.126572,null,null,null,null,null,null,null,null,null,null,null
+17,r,image17_r.jpg,-0.0949368,-5.16,0.106482,null,null,null,null,null,null,null,null,null,null,null
+17,l,image17_l.jpg,-0.0949368,-5.16,0.106482,null,null,null,null,null,null,null,null,null,null,null
 
